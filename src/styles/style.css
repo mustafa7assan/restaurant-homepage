@@ -3,7 +3,122 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --color-tow: #eba83a;
+  --color-one: #bb371a;
+  --color-three: #fff8d9;
+  --color-four: #d5dbb3;
+}
+html,
+body {
+  height: 100%;
+}
 
 body {
   background-color: #eee;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/hero.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.btn {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.navbar .container {
+  display: flex;
+  padding: 20px 10px;
+  justify-content: space-between;
+  color: white;
+}
+.navbar .links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar .links .link {
+  text-decoration: none;
+  color: inherit;
+}
+.hero-text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.hero-text h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.hero-text .order-now {
+  background-color: var(--color-one);
+  color: var(--color-tow);
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.photos {
+  margin: 20px 0;
+  text-align: center;
+}
+.photos h2 {
+  font-weight: 500;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+  display: inline-block;
+}
+.photos .photos-grid {
+  margin-top: 30px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+.photos .photos-grid div {
+  background-color: #eba83a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.photos .photos-grid div img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.photos .photos-grid div:nth-child(2) {
+  grid-column: span 2;
+}
+.photos .photos-grid div:nth-child(3) {
+  grid-column: span 3;
+}
+.photos .photos-grid div:nth-child(4) {
+  grid-column: span 2;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+  .navbar .links {
+    display: none;
+  }
+  hero-text h1 {
+    font-size: 30px;
+  }
 }
