@@ -19,14 +19,12 @@ body {
   font-family: "Poppins", sans-serif;
   position: relative;
 }
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/hero.jpg");
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+main {
   position: relative;
+  height: 100;
+}
+.hidden {
+  display: none;
 }
 .container {
   width: 80%;
@@ -38,12 +36,19 @@ header {
   font-family: inherit;
   cursor: pointer;
 }
-
+header {
+  background-color: var(--color-one);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
 .navbar .container {
   display: flex;
-  padding: 20px 10px;
+  padding: 15px 0;
   justify-content: space-between;
-  color: white;
+  align-items: center;
+  color: var(--color-three);
 }
 .navbar .links {
   list-style: none;
@@ -54,13 +59,22 @@ header {
   text-decoration: none;
   color: inherit;
 }
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/hero.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 .hero-text {
   position: absolute;
   width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: var(--color-three);
   text-align: center;
 }
 .hero-text h1 {
@@ -70,7 +84,7 @@ header {
 }
 .hero-text .order-now {
   background-color: var(--color-one);
-  color: var(--color-tow);
+  color: var(--color-three);
   font-weight: 600;
   padding: 10px 20px;
   border-radius: 5px;
@@ -82,6 +96,7 @@ header {
 .photos h2 {
   font-weight: 500;
   padding-bottom: 10px;
+  color: var(--color-one);
   border-bottom: 2px solid var(--color-one);
   display: inline-block;
 }

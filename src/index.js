@@ -1,4 +1,7 @@
+// Components
+import homepage from "./components/homepage";
+// style
 import "./styles/style.css";
-import "./img/hero.jpg";
-import "./img/grid-photo-1.jpg";
-console.log("Hi");
+
+const content = document.querySelector(".content");
+content.appendChild(homepage());
