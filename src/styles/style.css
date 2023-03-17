@@ -142,14 +142,14 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
 }
-.menu .menu-grid div {
-  background-color: #fff;
-  height: 180px;
+.menu .menu-grid > div {
+  height: 160px;
 }
 .burger-card {
   display: flex;
   border-radius: 10px;
   overflow: hidden;
+  background-color: var(--color-four);
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 .burger-image {
@@ -166,26 +166,19 @@ header {
 }
 .burger-card-body h3 {
   font-size: 16px;
+  color: var(--color-one);
 }
 .burger-card-body p {
   text-align: justify;
-  line-height: 1.2;
+  line-height: 1;
   font-size: 14px;
 }
-.burger-card-body p:nth-child(3) {
-  font-weight: 600;
-  font-size: 12px;
+.burger-card-body :nth-child(3) {
   color: var(--color-one);
-}
-.burger-card-body button {
-  background-color: var(--color-one);
-  color: var(--color-three);
-  padding: 5px 10px;
-  border-radius: 10px;
+  font-weight: 700;
   margin-top: auto;
-  align-self: flex-start;
-  font-size: 12px;
-  font-weight: 600;
+  align-self: flex-end;
+  font-size: 14px;
 }
 .burger-card .burger-image img {
   height: 180px;

@@ -15,12 +15,9 @@ const burgerCard = (burger, index) => {
     <img src="${images[index]}" alt="" />
   </div>
   <div class="burger-card-body">
-    <h3>${burger.name}</h3>
-    <p>
-    ${burger.description.slice(0, 70)} ...
-    </p>
-    <p>30$ USD</p>
-    <button class="btn">Order Now</button>
+   <h3>${burger.name}</h3>
+   <p>${burger.description}</p>
+   <p>$${burger.price} USD</p>
   </div>
 `;
   div.insertAdjacentHTML("afterbegin", html);

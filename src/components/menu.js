@@ -34,21 +34,21 @@ const burgers = [
   {
     name: "Bacon Cheeseburger",
     description:
-      "Similar to the classic cheeseburger, but with the addition of crispy bacon on top of the beef patty. Price",
+      "Similar to the classic cheeseburger, but with the addition of crispy bacon on top of the beef patty.",
     price: "13",
   },
 
   {
     name: "Veggie Burger",
     description:
-      " A vegetarian option, this burger typically includes a patty made of vegetables such as black beans, mushrooms, or lentils. It may also include toppings such as avocado, sprouts, or hummus",
+      " A vegetarian option, this burger typically includes a patty made of vegetables such as black beans, mushrooms, or lentils.",
     price: "9",
   },
 
   {
     name: "BBQ Burger",
     description:
-      "This burger includes a beef patty, cheddar cheese, crispy onion rings, and barbecue sauce. It's a sweet and savory option that is sure to satisfy",
+      "This burger includes a beef patty, cheddar cheese, crispy onion rings, and barbecue sauce. It's a sweet and savory option that is sure to satisfy.",
     price: "14",
   },
   {
@@ -60,19 +60,19 @@ const burgers = [
   {
     name: "Double Cheeseburger",
     description:
-      "This burger includes two beef patties instead of one, as well as double the amount of cheese and toppings. It's a hearty option for those with a big appetite",
+      "This burger includes two beef patties instead of one, as well as double the amount of cheese and toppings. It's a hearty option for those with a big appetite.",
     price: "16",
   },
   {
     name: "Hawaiian Burger",
     description:
-      "This burger includes a beef patty, grilled pineapple, teriyaki sauce, and sometimes ham or bacon. It's a sweet and salty option that is popular in Hawaii. Price",
+      "This burger includes a beef patty, grilled pineapple, teriyaki sauce, and sometimes ham or bacon. It's a sweet and salty option that is popular in Hawaii.",
     price: "11",
   },
   {
     name: "Jalapeno Burger",
     description:
-      "his burger includes a beef patty, pepper jack cheese, jalapeno peppers, and sometimes spicy mayo. It's a spicy option for those who like a little heat. Price",
+      "This burger includes a beef patty, pepper jack cheese, jalapeno peppers, and sometimes spicy mayo. It's a spicy option for those who like a little heat.",
     price: "12",
   },
 ];
