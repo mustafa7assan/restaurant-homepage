@@ -123,7 +123,7 @@ header {
   gap: 10px;
 }
 .photos .photos-grid div {
-  background-color: #eba83a;
+  background-color: var(--color-four);
   border-radius: 10px;
   overflow: hidden;
 }
