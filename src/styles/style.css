@@ -67,6 +67,7 @@ header {
 .burger-menu {
   cursor: pointer;
   display: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -97,6 +98,7 @@ header {
   font-weight: 600;
   padding: 10px 20px;
   border-radius: 5px;
+  -webkit-tap-highlight-color: transparent;
 }
 .photos {
   margin: 20px 0;

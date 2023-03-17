@@ -14,7 +14,6 @@ const hero = () => {
     const content = document.querySelector(".content");
     content.innerHTML = "";
     content.appendChild(menu());
-    console.log("order");
   });
   return hero;
 };
