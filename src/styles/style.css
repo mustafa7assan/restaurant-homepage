@@ -23,8 +23,12 @@ main,
   height: 100%;
   position: relative;
 }
-.hidden {
-  display: none;
+.icon {
+  height: 25px;
+  width: 25px;
+}
+.show {
+  display: block !important;
 }
 .container {
   width: 80%;
@@ -59,6 +63,10 @@ header {
 .navbar .links .link {
   text-decoration: none;
   color: inherit;
+}
+.burger-menu {
+  cursor: pointer;
+  display: none;
 }
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -300,6 +308,13 @@ footer a {
   }
   .navbar .links {
     display: none;
+    flex-direction: column;
+    background-color: var(--color-one);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 60px;
+    padding: 10px 20px;
   }
   .hero-text h1 {
     font-size: 30px;
@@ -312,5 +327,8 @@ footer a {
   }
   .about-container {
     flex-direction: column;
+  }
+  .burger-menu {
+    display: block;
   }
 }
