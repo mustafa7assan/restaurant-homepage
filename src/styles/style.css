@@ -13,15 +13,14 @@ html,
 body {
   height: 100%;
 }
+main {
+  height: 100%;
+}
 
 body {
-  background-color: #eee;
+  background-color: var(--color-three);
   font-family: "Poppins", sans-serif;
   position: relative;
-}
-main {
-  position: relative;
-  height: 100;
 }
 .hidden {
   display: none;
@@ -29,6 +28,7 @@ main {
 .container {
   width: 80%;
   margin: auto;
+  max-width: 900px;
 }
 .btn {
   border: none;
@@ -93,7 +93,8 @@ header {
   margin: 20px 0;
   text-align: center;
 }
-.photos h2 {
+.photos h2,
+.menu h2 {
   font-weight: 500;
   padding-bottom: 10px;
   color: var(--color-one);
@@ -127,13 +128,80 @@ header {
 .photos .photos-grid div:nth-child(4) {
   grid-column: span 2;
 }
+
+.menu {
+  margin-top: 70px;
+  text-align: center;
+}
+.menu h2 {
+  margin-top: 20px;
+}
+.menu .menu-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+.menu .menu-grid div {
+  background-color: #fff;
+  height: 180px;
+}
+.burger-card {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.burger-image {
+  flex: 3;
+}
+.burger-card-body {
+  flex: 4;
+  text-align: left;
+  padding: 8px;
+  color: rgb(27, 27, 39);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.burger-card-body h3 {
+  font-size: 16px;
+}
+.burger-card-body p {
+  text-align: justify;
+  line-height: 1.2;
+  font-size: 14px;
+}
+.burger-card-body p:nth-child(3) {
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--color-one);
+}
+.burger-card-body button {
+  background-color: var(--color-one);
+  color: var(--color-three);
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: auto;
+  align-self: flex-start;
+  font-size: 12px;
+  font-weight: 600;
+}
+.burger-card .burger-image img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
 footer {
+  width: 100%;
   margin-top: 30px;
   text-align: center;
   padding: 20px;
   color: var(--color-three);
   background-color: var(--color-one);
   font-size: 12px;
+  position: relative;
+  bottom: 0;
 }
 footer a {
   text-decoration: none;
