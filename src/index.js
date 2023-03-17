@@ -27,7 +27,6 @@ links.forEach((link) => {
     } else if (tab === "about") {
       content.appendChild(about());
     }
-    toggleLinks();
   });
 });
 
