@@ -311,6 +311,7 @@ footer a {
   .navbar .links {
     display: none;
     flex-direction: column;
+    gap: 10px;
     background-color: var(--color-one);
     position: absolute;
     width: 100%;

@@ -16,6 +16,8 @@ content.appendChild(homepage());
 const links = document.querySelectorAll(".link");
 links.forEach((link) => {
   link.addEventListener("click", () => {
+    const links = document.querySelector(".links");
+    links.classList.remove("show");
     const tab = link.textContent.toLowerCase();
     content.innerHTML = "";
     if (tab === "home") {
@@ -31,4 +33,9 @@ links.forEach((link) => {
 });
 
 const burgerMenu = document.querySelector(".burger-menu");
+const logo = document.querySelector(".logo");
 burgerMenu.addEventListener("click", toggleLinks);
+logo.addEventListener("click", () => {
+  content.innerHTML = "";
+  content.appendChild(homepage());
+});
